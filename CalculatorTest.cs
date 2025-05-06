@@ -147,6 +147,77 @@ namespace Basic_Calculator
             Assert.That(result, Is.EqualTo(2));
         }
 
+        [Test]
+        public void Add_TwoNegativeNumbers_ReturnsCorrectSum()
+        {
+            // Arrange
+            int a = -5;
+            int b = -3;
+
+            // Act
+            double result = _calculator.Add(a, b);
+
+            // Assert
+            Assert.That(result, Is.EqualTo(-8));
+        }
+
+        [Test]
+        public void Subtract_TwoNegativeNumbers_ReturnsCorrectDifference()
+        {
+            // Arrange
+            int a = -5;
+            int b = -3;
+
+            // Act
+            double result = _calculator.Subtract(a, b);
+
+            // Assert
+            Assert.That(result, Is.EqualTo(-2));
+        }
+
+        [Test]
+        public void Multiply_TwoNegativeNumbers_ReturnsPositiveProduct()
+        {
+            // Arrange
+            int a = -5;
+            int b = -3;
+
+            // Act
+            double result = _calculator.Multiply(a, b);
+
+            // Assert
+            Assert.That(result, Is.EqualTo(15));
+        }
+
+        [Test]
+        public void Divide_PositiveByNegativeNumber_ReturnsNegativeQuotient()
+        {
+            // Arrange
+            int a = 6;
+            int b = -3;
+
+            // Act
+            double result = _calculator.Divide(a, b);
+
+            // Assert
+            Assert.That(result, Is.EqualTo(-2));
+        }
+
+        [Test]
+        public void Divide_ZeroByAnyNumber_ReturnsZero()
+        {
+            // Arrange
+            int a = 0;
+            int b = 5;
+
+            // Act
+            double result = _calculator.Divide(a, b);
+
+            // Assert
+            Assert.That(result, Is.EqualTo(0));
+        }
+
+
 
     }
 }
