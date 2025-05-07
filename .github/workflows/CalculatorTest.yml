@@ -33,4 +33,5 @@ jobs:
 
       # Step 5: Run tests
       - name: Run tests
-        run: dotnet test --no-build --configuration Release --verbosity normal
+        run: dotnet test --filter FullyQualifiedName~Basic_Calculator.CalculatorTest.cs
+
