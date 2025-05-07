@@ -1,7 +1,7 @@
 namespace Basic_Calculator
 {
     [TestFixture]
-    public class Tests
+    public class CalculatorTest
     {
 
         private Calculator _calculator;
