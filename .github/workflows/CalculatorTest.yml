@@ -33,5 +33,5 @@ jobs:
 
       # Step 5: Run tests
       - name: Run tests
-        run: dotnet test --filter FullyQualifiedName~Basic_Calculator.CalculatorTest.cs
+        run: dotnet test --filter FullyQualifiedName~Basic_Calculator.CalculatorTest
 
