@@ -217,6 +217,18 @@ namespace Basic_Calculator
             Assert.That(result, Is.EqualTo(0));
         }
 
+        [Test]
+        public void DivideWithNegativeNumber()
+        {
+            int a = 11;
+            int b = -5;
+            double res=_calculator.Divide(a, b);
+
+            //Assert
+            Assert.That(res, Is.EqualTo(-2.0d));
+            
+        }
+
 
 
     }
