@@ -224,7 +224,9 @@ namespace Basic_Calculator
             int b = -5;
             double res=_calculator.Divide(a, b);
 
+            //Assert
             Assert.That(res, Is.EqualTo(-2.0d));
+            
         }
 
 
